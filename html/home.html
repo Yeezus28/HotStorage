@@ -18,22 +18,25 @@
             <a href="#shopping" class="btn">Start shopping</a>
         </div>
     </div>
+
     <div class="section" id="shopping">
         <div class="shoppingmenu">
             <h2 class="shopping-title">Available Items</h2>
     
             <div class="item">
-                <span class="item-name">Product 1</span>
-                <span class="item-price">$19.99</span>
+                <img class="item-image" src="../images/products/babyoil.jpg" alt="Johnson's Baby Oil">
+                <span class="item-name">Johnson's Baby 100 ml Oil</span>
+                <span class="item-price">$3.90</span>
                 <input type="number" class="item-quantity" min="1" value="1">
-                <button class="btn" onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+                <button class="btn" onclick="addToCart('Johnson\'s Baby 100 ml Oil', 3.90, event)">Add to Cart</button>
             </div>
     
             <div class="item">
-                <span class="item-name">Product 2</span>
-                <span class="item-price">$29.99</span>
+                <img class="item-image" src="../images/products/pink handcuffs.PNG" alt="Pink Fluffy Handcuffs">
+                <span class="item-name">Pink Fluffy Handcuffs</span>
+                <span class="item-price">$15.90</span>
                 <input type="number" class="item-quantity" min="1" value="1">
-                <button class="btn" onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+                <button class="btn" onclick="addToCart('Pink Fluffy Handcuffs', 15.90, event)">Add to Cart</button>
             </div>
     
         </div>
@@ -41,7 +44,7 @@
     
     <div id="cart" class="section">
         <h2>Your Cart</h2>
-        <ul id="cart-items"></ul>
+        <ul id="cart-items" class="empty"></ul>
     </div>
 </body>
 
